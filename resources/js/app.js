@@ -1,10 +1,9 @@
 require('./bootstrap');
 import { createApp } from 'vue';
-import Home from './components/ExampleComponent.vue';
+import home from './components/home.vue';
+
 const app = createApp({});
 
-//register the component
-app.component('Home', Home);
+app.component('home', home);
 
-//..HTML element to mount the Vue application
 app.mount('#app');
